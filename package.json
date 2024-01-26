@@ -10,7 +10,9 @@
     "eggPlugin",
     "egg-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "mysql2": "^3.9.0"
+  },
   "devDependencies": {
     "egg": "^3",
     "egg-bin": "^5",
@@ -40,12 +42,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-mysql-reconnection.git"
+    "url": "git+https://github.com/shanzemin/egg-mysql-reconnection.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/shanzemin/egg-mysql-reconnection/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-mysql-reconnection#readme",
+  "homepage": "https://github.com/shanzemin/egg-mysql-reconnection#readme",
   "author": "",
   "license": "MIT"
 }

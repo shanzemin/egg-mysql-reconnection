@@ -1,10 +1,20 @@
 'use strict';
 
-/**
- * egg-mysql-reconnection default config
- * @member Config#mysqlReconnection
- * @property {String} SOME_KEY - some description
- */
-exports.mysqlReconnection = {
-
+exports.mysql = {
+  // database configuration
+  client: {
+    // host
+    host: 'mysql.com',
+    // port
+    port: '3306',
+    // username
+    user: 'test_user',
+    // password
+    password: 'test_password',
+    // database
+    database: 'test',
+  },
+  // load into app, default is open
+  app: true,
+  interval: 2000
 };

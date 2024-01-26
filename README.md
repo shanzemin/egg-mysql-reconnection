@@ -34,7 +34,7 @@ npm i egg-mysql-reconnection --save
 
 ```js
 // {app_root}/config/plugin.js
-exports.mysqlReconnection = {
+exports.mysql = {
   enable: true,
   package: 'egg-mysql-reconnection',
 };
@@ -44,7 +44,24 @@ exports.mysqlReconnection = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.mysqlReconnection = {
+exports.mysql = {
+  // database configuration
+  client: {
+    // host
+    host: 'mysql.com',
+    // port
+    port: '3306',
+    // username
+    user: 'test_user',
+    // password
+    password: 'test_password',
+    // database
+    database: 'test',
+  },
+  // load into app, default is open
+  app: true,
+  // 每隔几秒就在数据库查询一次，保持活性，单位毫秒
+  interval: 2000
 };
 ```
 
