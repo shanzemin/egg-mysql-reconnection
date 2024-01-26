@@ -1,6 +1,6 @@
 {
   "name": "egg-mysql-reconnection",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "eggPlugin": {
     "name": "mysqlReconnection"
@@ -35,7 +35,8 @@
     "app.js",
     "agent.js",
     "config",
-    "app"
+    "app",
+    "lib"
   ],
   "ci": {
     "version": "16, 18"
