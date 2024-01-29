@@ -44,7 +44,7 @@ class AppBootHook {
     // 应用已经启动完毕
     // 间隔两秒对访问一次数据库，保持活性
     setInterval(async () => {
-      await this.app.mysql.promise().query('select 1')
+      await this.app.mysql.query('select 1')
     }, this.app.config.mysql.interval)
   }
 
